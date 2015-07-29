@@ -2,7 +2,7 @@
 
 Módulo em Zend Framework 2 para consulta de endereço via CEP com cache em banco de dados
 
-Este módulo detecta a instalação do orm ORM [Doctrine] (http://www.doctrine-project.org/) e usa o banco de dados para cache de query, o que Torna sua consulta mais rápida e garante retorno mesmo se o webservice estiver fora do ar.
+Este módulo detecta a instalação do orm ORM [Doctrine] (http://www.doctrine-project.org/) e usa o banco de dados para cache de query, tornando sua consulta mais rápida e garantindo retorno de dados mesmo se o webservice estiver fora do ar.
 
 # Pré-Requisitos
 - É necessário que o ORM [Doctrine] (http://www.doctrine-project.org/) esteja instalado em seu projeto zend.
