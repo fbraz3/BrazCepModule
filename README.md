@@ -112,17 +112,15 @@ http[s]://domain/cep/21041020/xml
 
 # Referências dos Adapters de pesquisa de CEP
 
-[ViaCEP](http://viacep.com.br/) (Concluído)
+[ViaCEP](http://viacep.com.br/)
 
-[Postmon](http://postmon.com.br/) (Concluído)
+[Postmon](http://postmon.com.br/)
 
-[Correio Control](http://avisobrasil.com.br/correio-control/api-de-consulta-de-cep/) (Concluído)
+[Correio Control](http://avisobrasil.com.br/correio-control/api-de-consulta-de-cep/)
 
-[Republica Virtual](http://www.republicavirtual.com.br/cep/) (Concluído)
+[Republica Virtual](http://www.republicavirtual.com.br/cep/)
 
 
-# Contruibuidores
-
-Diogo Oliveira Mascarenhas (https://github.com/diogomascarenha)
-
-Everton Muniz (https://github.com/munizeverton)
+# Desenvolvido por
+Felipe Braz (https://www.braz.pro.br/blog/)
+Baseado no projeto [InfanaticaCepModule] (https://github.com/Infanatica/InfanaticaCepModule)
