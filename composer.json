@@ -1,6 +1,6 @@
 {
   "name": "fbraz3/braz-cep-module",
-  "description": "Módulo em Zend Framework 2 para consulta CEP e Cache em ORM Doctrine",
+  "description": "Modulo em Zend Framework 2 para consulta de endereco via CEP",
   "tyoe": "library",
   "license": "BSD-3-Clause",
   "keywords": [
@@ -15,14 +15,14 @@
   "homepage": "https://github.com/fbraz3/BrazCepModule",
   "authors": [
     {
-      "name": "Felipe Keller Braz"
+      "name":"Felipe Keller Braz"
     }
   ],
   "require": {
     "php": ">=5.3.3",
     "doctrine/doctrine-orm-module": "dev-master",
     "zendframework/zend-authentication": "~2.1",
-    "zendframework/zend-http": "~2.1",
+    "zendframework/zend-http" : "~2.1",
     "zendframework/zend-loader": "~2.1",
     "zendframework/zend-modulemanager": "~2.1",
     "zendframework/zend-mvc": "~2.1",
