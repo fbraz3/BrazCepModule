@@ -1,6 +1,6 @@
 {
-  "name": "fbraz3/infanatica-cep-module",
-  "description": "Modulo em Zend Framework 2 para consulta de endereco via CEP",
+  "name": "fbraz3/braz-cep-module",
+  "description": "Módulo em Zend Framework 2 para consulta CEP + Cache em ORM Doctrine",
   "tyoe": "library",
   "license": "BSD-3-Clause",
   "keywords": [
@@ -12,7 +12,7 @@
     "zend",
     "framework"
   ],
-  "homepage": "https://github.com/fbraz3/InfanaticaCepModule",
+  "homepage": "https://github.com/fbraz3/BrazCepModule",
   "authors": [
     {
       "name":"Felipe Keller Braz"
