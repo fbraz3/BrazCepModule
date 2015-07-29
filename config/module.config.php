@@ -51,6 +51,24 @@ return array(
         ),
     ),
 
+    //Doctrine ORM
+    'doctrine' => array(
+        'driver' => array(
+            __NAMESPACE__ . '_driver' => array(
+                'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
+                'cache' => 'array',
+                'paths' => array(
+                    __DIR__ . '/../src/InfanaticaCepModule/Entity'
+                )
+            ),
+            'orm_default' => array(
+                'drivers' => array(
+                    'InfanaticaCepModule\Entity' => __NAMESPACE__ . '_driver'
+                )
+            )
+        )
+    ),
+
     'service_manager' => array(
         'invokables' => array (
           'InfanaticaCepModule\Http\Client' => 'Zend\Http\Client',

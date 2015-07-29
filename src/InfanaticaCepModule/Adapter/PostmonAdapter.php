@@ -69,4 +69,12 @@ class PostmonAdapter implements CepAdapterInterface {
         json_decode($string);
         return (json_last_error() == JSON_ERROR_NONE);
     }
+
+    /**
+     * @return EnderecoResponse
+     */
+    public function getEnderecoResponse()
+    {
+        return $this->enderecoResponse;
+    }
 }

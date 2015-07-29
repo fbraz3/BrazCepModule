@@ -1,32 +1,42 @@
-# InfanaticaCepModule
+# InfanaticaCepModule by Felipe Braz
 
-Módulo em Zend Framework 2 para consulta de endereço via CEP
+Módulo em Zend Framework 2 para consulta de endereço via CEP com cache em banco de dados
+
+Este módulo detecta a instalação do orm ORM [Doctrine] (http://www.doctrine-project.org/) e usa o banco de dados para cache de query, o que Torna sua consulta mais rápida e garante retorno mesmo se o webservice estiver fora do ar.
+
+# Pré-Requisitos
+- É necessário que o ORM [Doctrine] (http://www.doctrine-project.org/) esteja instalado em seu projeto zend.
+- Seu orm deve responder através do serviceLocator por 'doctrine.entitymanager.orm_default'
 
 # Instalação
 
 #### Instalação via clone
 
-Clonar o projeto [InfanaticaCepModule](https://github.com/Infanatica/InfanaticaCepModule.git) na pasta "./vendor" ou "./module" no seu projeto em Zend Framework 2
+Clonar o projeto [InfanaticaCepModule](https://github.com/fbraz3/InfanaticaCepModule.git) na pasta "./vendor" ou "./module" no seu projeto em Zend Framework 2
 
 ```bash
     $ cd PASTA_DO_SKELETON_DO_ZEND_FRAMEWORK2
     $ cd vendor
-    $ git clone https://github.com/Infanatica/InfanaticaCepModule.git
+    $ git clone https://github.com/fbraz3/InfanaticaCepModule.git
 ```
 
 #### Instalação via composer
 
-###### Método 1
-
-Adicionar o projeto [InfanaticaCepModule](https://packagist.org/packages/infanatica/infanatica-cep-module) no seu composer.json:
+Adicionar o projeto [InfanaticaCepModule](https://github.com/fbraz3/InfanaticaCepModule.git) no seu composer.json:
 
 
 ```json
-    "require": {
-        "infanatica/infanatica-cep-module": "dev-master"
-    }
+     "repositories": [
+        {
+          "type": "git",
+          "url": "https://github.com/fbraz3/InfanaticaCepModule"
+        }
+      ],
+      "require": {
+        "fbraz3/infanatica-cep-module": "dev-master"
+      },
 ```
-Executar o comando "update" ou "install" do composer para fazer download do [InfanaticaCepModule](https://packagist.org/packages/infanatica/infanatica-cep-module)
+Executar o comando "update" ou "install" do composer para fazer download do [InfanaticaCepModule](https://github.com/fbraz3/InfanaticaCepModule)
 
 ```bash
     $ php composer.phar update
@@ -34,10 +44,10 @@ Executar o comando "update" ou "install" do composer para fazer download do [Inf
 
 ###### Método 2
 
-Executar o comando "require" do composer para atualizar o seu composer.json e efetuar o download do [InfanaticaCepModule](https://packagist.org/packages/infanatica/infanatica-cep-module)
+Executar o comando "require" do composer para atualizar o seu composer.json e efetuar o download do [InfanaticaCepModule](https://github.com/fbraz3/InfanaticaCepModule)
 
 ```bash
-	php composer.phar require infanatica/infanatica-cep-module dev-master
+	php composer.phar require fbraz3/infanatica-cep-module dev-master
 ```
 
 
@@ -55,6 +65,8 @@ Adicionar ao seu arquivo `application.config.php`
         // ...
     );
 ```
+
+Executar em seu banco de dados o arquivo **table.sql**
 
 # Utilização do Service 
 #### Exemplo no \Application\Controller\InderController

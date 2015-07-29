@@ -12,14 +12,15 @@
     "zend",
     "framework"
   ],
-  "homepage": "https://github.com/Infanatica/InfanaticaCepModule",
+  "homepage": "https://github.com/fbraz3/InfanaticaCepModule",
   "authors": [
     {
-      "name":"Diogo Oliveira Mascarenhas"
+      "name":"Felipe Keller Braz"
     }
   ],
   "require": {
     "php": ">=5.3.3",
+    "doctrine/doctrine-orm-module": "dev-master",
     "zendframework/zend-authentication": "~2.1",
     "zendframework/zend-http" : "~2.1",
     "zendframework/zend-loader": "~2.1",
