@@ -11,6 +11,10 @@ Módulo em Zend Framework 2 para consulta de endereço via CEP com cache em banc
 - Retorno padrão em json (sem necessidade de parâmetros adicionais)
 - Usa o banco de dados para cache de query.
 
+# To-Do
+
+- Round Robin entre os webservices disponíveis
+- Contingência em caso de falha na resposta de algum webservice
 
 # Instalação
 
