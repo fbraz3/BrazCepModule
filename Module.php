@@ -1,6 +1,6 @@
 <?php
 
-namespace InfanaticaCepModule;
+namespace BrzCepModule;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;

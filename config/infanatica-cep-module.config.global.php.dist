@@ -3,7 +3,7 @@
 return array(
     'service_manager' => array(
         'aliases' => array(
-            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\ViaCepAdapter'
+            'BrzCepModule\Adapter\CepDefaultAdapter' => 'BrzCepModule\Service\ViaCepAdapter'
         ),
     ),
 );

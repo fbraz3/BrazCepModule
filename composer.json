@@ -1,5 +1,5 @@
 {
-  "name": "fbraz3/braz-cep-module",
+  "name": "fbraz3/brz-cep-module",
   "description": "Modulo em Zend Framework 2 para consulta de endereco via CEP",
   "tyoe": "library",
   "license": "BSD-3-Clause",
@@ -32,7 +32,7 @@
   },
   "autoload": {
     "psr-0": {
-      "InfanaticaCepModule": "src/"
+      "BrzCepModule": "src/"
     },
     "classmap": [
       "./Module.php"

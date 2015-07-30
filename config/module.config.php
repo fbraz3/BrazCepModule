@@ -11,7 +11,7 @@ return array(
                 'options' => array(
                     'route'    => '/cep',
                     'defaults' => array(
-                        '__NAMESPACE__' => 'InfanaticaCepModule\Controller',
+                        '__NAMESPACE__' => 'BrzCepModule\Controller',
                         'controller'    => 'Cep',
                         'action'        => 'index',
 
@@ -27,7 +27,7 @@ return array(
                                 'cep' => '[0-9\-]{8,9}',
                             ),
                             'defaults' => array(
-                                '__NAMESPACE__' => 'InfanaticaCepModule\Controller',
+                                '__NAMESPACE__' => 'BrzCepModule\Controller',
                                 'controller'    => 'Cep',
                                 'action'        => 'getEnderecoByCep',
                                 'formato'        => 'json'
@@ -58,12 +58,12 @@ return array(
                 'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
                 'cache' => 'array',
                 'paths' => array(
-                    __DIR__ . '/../src/InfanaticaCepModule/Entity'
+                    __DIR__ . '/../src/BrzCepModule/Entity'
                 )
             ),
             'orm_default' => array(
                 'drivers' => array(
-                    'InfanaticaCepModule\Entity' => __NAMESPACE__ . '_driver'
+                    'BrzCepModule\Entity' => __NAMESPACE__ . '_driver'
                 )
             )
         )
@@ -71,25 +71,25 @@ return array(
 
     'service_manager' => array(
         'invokables' => array (
-          'InfanaticaCepModule\Http\Client' => 'Zend\Http\Client',
-          'InfanaticaCepModule\Http\Response' => 'Zend\Http\Response',
-          'InfanaticaCepModule\Response\EnderecoResponse' => 'InfanaticaCepModule\Response\EnderecoResponse'
+          'BrzCepModule\Http\Client' => 'Zend\Http\Client',
+          'BrzCepModule\Http\Response' => 'Zend\Http\Response',
+          'BrzCepModule\Response\EnderecoResponse' => 'BrzCepModule\Response\EnderecoResponse'
         ),
         'factories' => array(
-            'InfanaticaCepModule\Service\CepService' =>'InfanaticaCepModule\Factory\CepServiceFactory',
-            'InfanaticaCepModule\Service\ViaCepAdapter' =>'InfanaticaCepModule\Factory\ViaCepAdapterFactory',
-            'InfanaticaCepModule\Service\PostmonAdapter' =>'InfanaticaCepModule\Factory\PostmonAdapterFactory',
-            'InfanaticaCepModule\Service\CorreioControlAdapter' =>'InfanaticaCepModule\Factory\CorreioControlAdapterFactory',
-            'InfanaticaCepModule\Service\RepublicaVirtualAdapter' =>'InfanaticaCepModule\Factory\RepublicaVirtualAdapterFactory',
+            'BrzCepModule\Service\CepService' =>'BrzCepModule\Factory\CepServiceFactory',
+            'BrzCepModule\Service\ViaCepAdapter' =>'BrzCepModule\Factory\ViaCepAdapterFactory',
+            'BrzCepModule\Service\PostmonAdapter' =>'BrzCepModule\Factory\PostmonAdapterFactory',
+            'BrzCepModule\Service\CorreioControlAdapter' =>'BrzCepModule\Factory\CorreioControlAdapterFactory',
+            'BrzCepModule\Service\RepublicaVirtualAdapter' =>'BrzCepModule\Factory\RepublicaVirtualAdapterFactory',
         ),
         'aliases' => array(
-            'InfanaticaCepModule\Adapter\CepDefaultAdapter' => 'InfanaticaCepModule\Service\ViaCepAdapter'
+            'BrzCepModule\Adapter\CepDefaultAdapter' => 'BrzCepModule\Service\ViaCepAdapter'
         ),
     ),
 
     'controllers' => array(
         'factories' => array(
-            'InfanaticaCepModule\Controller\Cep' =>'InfanaticaCepModule\Factory\CepControllerFactory'
+            'BrzCepModule\Controller\Cep' =>'BrzCepModule\Factory\CepControllerFactory'
         ),
     ),
     'view_manager' => array(
