@@ -58,7 +58,7 @@ return array(
                 'class' => 'Doctrine\ORM\Mapping\Driver\AnnotationDriver',
                 'cache' => 'array',
                 'paths' => array(
-                    __DIR__ . '/../src-tmp/BrzCepModule/Entity'
+                    __DIR__ . '/../src/BrzCepModule/Entity'
                 )
             ),
             'orm_default' => array(
