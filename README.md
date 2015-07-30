@@ -1,4 +1,4 @@
-# BrzCepModule by Felipe Braz
+# BrzCepModule
 
 Módulo em Zend Framework 2 para consulta de endereço via CEP com cache em banco de dados
 
@@ -31,14 +31,14 @@ Adicionar o projeto [BrzCepModule](https://github.com/fbraz3/BrzCepModule.git) n
 
 ```json
      "repositories": [
-        {
-          "type": "git",
-          "url": "https://github.com/fbraz3/BrzCepModule"
-        }
-      ],
-      "require": {
-        "fbraz3/brz-cep-module": "dev-master"
-      },
+         {
+           "type": "git",
+           "url": "https://github.com/fbraz3/BrzCepModule"
+         }
+       ],
+       "require": {         
+         "fbraz3/brz-cep-module": "dev-master"
+       },
 ```
 Executar o comando "update" ou "install" do composer para fazer download do [BrzCepModule](https://github.com/fbraz3/BrzCepModule)
 
