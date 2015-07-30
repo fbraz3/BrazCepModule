@@ -1,0 +1,9 @@
+<?php
+
+return array(
+    'service_manager' => array(
+        'aliases' => array(
+            'BrzCepModule\Adapter\CepDefaultAdapter' => 'BrzCepModule\Service\ViaCepAdapter'
+        ),
+    ),
+);
