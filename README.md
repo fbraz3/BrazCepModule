@@ -130,6 +130,6 @@ http[s]://domain/cep/21041020/xml
 
 
 # Desenvolvido por
-Felipe Braz (https://www.braz.pro.br/blog/)
+Felipe Braz (https://braz.dev/blog/)
 
 Baseado no projeto [InfanaticaCepModule] (https://github.com/Infanatica/InfanaticaCepModule)
